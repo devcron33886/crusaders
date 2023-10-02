@@ -18,8 +18,10 @@ return new class extends Migration
             $table->float('weight');
             $table->string('position');
             $table->string('skills');
+            $table->string('health_insurance');
             $table->longText('injury_history')->nullable();
             $table->longText('medical_history');
+            $table->string('status');
             $table->timestamps();
             $table->softDeletes();
         });

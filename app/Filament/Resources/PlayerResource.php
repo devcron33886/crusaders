@@ -78,7 +78,7 @@ class PlayerResource extends Resource
                             ->required(),
                         Forms\Components\Textarea::make('injury_history'),
                         Forms\Components\Textarea::make('medical_history')
-                        ->required()
+                            ->required(),
                     ])->columns(2),
             ]);
     }
