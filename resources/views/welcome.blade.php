@@ -10,7 +10,7 @@
     <meta name="keywords" content="tailwindcss,laravel,vite">
     <meta name="author" content="Jacques MBABAZI">
 
-    <title>Laravel</title>
+    <title>Home</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
