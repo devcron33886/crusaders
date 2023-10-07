@@ -3,15 +3,12 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CompetitionResource\Pages;
-use App\Filament\Resources\CompetitionResource\RelationManagers;
 use App\Models\Competition;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CompetitionResource extends Resource
 {
@@ -83,11 +80,11 @@ class CompetitionResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-    
+
     public static function getPages(): array
     {
         return [
             'index' => Pages\ManageCompetitions::route('/'),
         ];
-    }    
+    }
 }

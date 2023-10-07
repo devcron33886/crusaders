@@ -18,7 +18,6 @@ return new class extends Migration
             $table->foreignId('country_id')->constrained();
             $table->foreignId('competition_id')->constrained();
             $table->foreignId('sport_id')->constrained();
-            $table->string('status');
             $table->string('payment_status');
             $table->string('payment_method');
             $table->string('payment_reference');
@@ -26,6 +25,7 @@ return new class extends Migration
             $table->string('payment_date');
             $table->string('payment_time');
             $table->string('payment_currency');
+            $table->string('status');
             $table->timestamps();
             $table->softDeletes();
         });

@@ -16,8 +16,9 @@ return new class extends Migration
             $table->date('date_of_birth');
             $table->float('height');
             $table->float('weight');
-            $table->string('position');
-            $table->string('skills');
+            $table->string('position')->nullable();
+            $table->string('skills')->nullable();
+            $table->string('school');
             $table->string('health_insurance');
             $table->longText('injury_history')->nullable();
             $table->longText('medical_history');

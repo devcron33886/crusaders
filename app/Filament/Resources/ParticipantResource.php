@@ -3,15 +3,12 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ParticipantResource\Pages;
-use App\Filament\Resources\ParticipantResource\RelationManagers;
 use App\Models\Participant;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ParticipantResource extends Resource
 {
@@ -63,7 +60,7 @@ class ParticipantResource extends Resource
                 Tables\Columns\TextColumn::make('user.name')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('country_id')
+                Tables\Columns\TextColumn::make('country.name')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('competition.name')
@@ -117,14 +114,14 @@ class ParticipantResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -132,5 +129,5 @@ class ParticipantResource extends Resource
             'create' => Pages\CreateParticipant::route('/create'),
             'edit' => Pages\EditParticipant::route('/{record}/edit'),
         ];
-    }    
+    }
 }
