@@ -19,12 +19,12 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
             <a href="/" class="text-sm font-semibold leading-6 text-white">Home</a>
-            <a href="{{ route('about') }}" class="text-sm font-semibold leading-6 text-white">About us</a>
+            <a href="{{ route('about') }}" class="text-sm font-semibold leading-6 text-white" wire:navigate>About us</a>
             <a href="#" class="text-sm font-semibold leading-6 text-white">Gallery</a>
             <a href="{{ route('contact.index')}}" class="text-sm font-semibold leading-6 text-white">Contact us</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="{{ route('register-player.index')}}" class="text-sm font-semibold leading-6 text-white">Register
+            <a href="{{ route('register-player.index')}}" class="text-sm font-semibold leading-6 text-white">Registration is
                 Open <span aria-hidden="true">&rarr;</span></a>
         </div>
     </div>

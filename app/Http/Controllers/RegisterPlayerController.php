@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePlayerRequest;
-use App\Models\Player;
+use App\Models\Trainee;
+use App\Http\Requests\StoreTraineeRequest;
 
 class RegisterPlayerController extends Controller
 {
@@ -12,10 +12,11 @@ class RegisterPlayerController extends Controller
         return view('registration');
     }
 
-    public function store(StorePlayerRequest $request)
+    public function register(StoreTraineeRequest $request)
     {
         try {
-            $player = Player::create($request->validated().['status' => 'pending']);
+            $player = array_merge($request->validated(), ['status' => 'pending', 'payment_status' => 'pending']);
+            Trainee::create($player);
         } catch (\Exception $e) {
             return back()->with('error', 'Player registration failed');
         }
