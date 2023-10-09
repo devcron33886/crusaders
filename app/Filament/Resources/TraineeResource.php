@@ -3,15 +3,12 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\TraineeResource\Pages;
-use App\Filament\Resources\TraineeResource\RelationManagers;
 use App\Models\Trainee;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class TraineeResource extends Resource
 {
@@ -149,14 +146,14 @@ class TraineeResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -164,5 +161,5 @@ class TraineeResource extends Resource
             'create' => Pages\CreateTrainee::route('/create'),
             'edit' => Pages\EditTrainee::route('/{record}/edit'),
         ];
-    }    
+    }
 }

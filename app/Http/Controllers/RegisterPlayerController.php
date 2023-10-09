@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Trainee;
 use App\Http\Requests\StoreTraineeRequest;
+use App\Models\Trainee;
 
 class RegisterPlayerController extends Controller
 {
