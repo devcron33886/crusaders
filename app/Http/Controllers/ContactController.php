@@ -23,7 +23,6 @@ class ContactController extends Controller
             'linkedin' => 'https://www.linkedin.com/company/crusaders-basketball-club',
             'tiktok' => 'https://www.tiktok.com/@crusadersbbclub',
             'author' => 'Crusaders Basketball Club',
-            'email' => 'info@crusaders.africa',
             'robots' => 'index, follow',
         ]);
     }

@@ -36,8 +36,8 @@
             <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div
                     class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/50 hover:ring-white/20">
-                    Announcing our registration to the new players. <a href="#" class="font-semibold text-white"><span
-                            class="absolute inset-0" aria-hidden="true"></span>Read
+                    Announcing our registration to the new players. <a href="{{ route('register-player.index')}}"
+                        class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>Read
                         more <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     way at the CRUSADERS BASKETBALL ACADEMY.
                 </p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#"
+                    <a href="{{ route('register-player.index')}}"
                         class="rounded-md bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-400">Register
                         a player
                     </a>
@@ -70,7 +70,7 @@
         </div>
     </div>
     <div class="relative isolate -z-10">
-        <svg class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+        <svg class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-amber-300 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
             aria-hidden="true">
             <defs>
                 <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1"
@@ -78,7 +78,7 @@
                     <path d="M.5 200V.5H200" fill="none" />
                 </pattern>
             </defs>
-            <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+            <svg x="50%" y="-1" class="overflow-visible fill-amber-400">
                 <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                     stroke-width="0" />
             </svg>
@@ -94,18 +94,24 @@
             <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
                 <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                     <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">We’re shaping the career
-                            in Basket Ball.</h1>
-                        <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Quas sit voluptatibus culpa dolorum sed alias
-                            magnam natus similique. Quaerat possimus necessitatibus dolore placeat ratione officia ex
-                            nulla voluptatum pariatur exercitationem.</p>
+                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">We’re shapping careers
+                            in basket ball.</h1>
+                        <p class="relative mt-6 text-lg leading-8 text-gray-900 sm:max-w-md lg:max-w-none">JABALEE
+                            Sports Management has a vision to be the leading sports and Entertainment Company
+                            while connecting Africa to the global sports market. Talent management is a major goal
+                            for us at
+                            JABALEE SM. We are currently identifying, nurturing, grooming and growing our talents
+                            the right
+                            way at the CRUSADERS BASKETBALL ACADEMY.
+
+                        </p>
+
                     </div>
                     <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                         <div
                             class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                             <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                <img src="https://images.pexels.com/photos/1152853/pexels-photo-1152853.jpeg?auto=compress&cs=tinysrgb&w=600&auto=format&fit=crop&h=528&q=80"
                                     alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                                 <div
                                     class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
@@ -114,14 +120,14 @@
                         </div>
                         <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                             <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                <img src="https://images.pexels.com/photos/8337468/pexels-photo-8337468.jpeg?auto=compress&cs=tinysrgb&w=600&auto=format&fit=crop&h=528&q=80"
                                     alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                                 <div
                                     class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                                 </div>
                             </div>
                             <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                                <img src="https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=600&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
                                     alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                                 <div
                                     class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
@@ -130,14 +136,14 @@
                         </div>
                         <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                             <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                                <img src="https://images.pexels.com/photos/5756239/pexels-photo-5756239.jpeg?auto=compress&cs=tinysrgb&w=600&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
                                     alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                                 <div
                                     class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                                 </div>
                             </div>
                             <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                <img src="https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=600&auto=format&fit=crop&h=528&q=80"
                                     alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                                 <div
                                     class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
@@ -153,7 +159,7 @@
         <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
             <div class="mx-auto max-w-2xl">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our team</h2>
-                <p class="mt-4 text-lg leading-8 text-gray-400">We’re a dynamic group of individuals who are passionate
+                <p class="mt-4 text-lg leading-8 text-gray-100">We’re a dynamic group of individuals who are passionate
                     about shaping the careers of young people.
                     about what we do.</p>
             </div>
@@ -164,28 +170,25 @@
                         src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
                         alt="">
                     <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">Leonard Krasner</h3>
-                    <p class="text-sm leading-6 text-gray-400">Senior Designer</p>
-                    <ul role="list" class="mt-6 flex justify-center gap-x-6">
-                        <li>
-                            <a href="#" class="text-gray-400 hover:text-gray-300">
-                                <span class="sr-only">Twitter</span>
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                                    <path
-                                        d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-gray-400 hover:text-gray-300">
-                                <span class="sr-only">LinkedIn</span>
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <p class="text-sm leading-6 text-gray-100">Head Coach</p>
+
+                </li>
+
+                <li class="rounded-2xl bg-gray-800 px-8 py-10">
+                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
+                        src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                        alt="">
+                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">Leonard Krasner</h3>
+                    <p class="text-sm leading-6 text-gray-100">Head Coach</p>
+
+                </li>
+                <li class="rounded-2xl bg-gray-800 px-8 py-10">
+                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
+                        src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                        alt="">
+                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">Leonard Krasner</h3>
+                    <p class="text-sm leading-6 text-gray-100">Head Coach</p>
+
                 </li>
 
                 <!-- More people... -->

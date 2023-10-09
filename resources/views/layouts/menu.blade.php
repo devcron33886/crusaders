@@ -3,7 +3,7 @@
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">{{ config('app.name')}}</span>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
+                <img class="h-20 w-auto" src="{{ asset('assets/logo.png')}}" alt="{{ config('app.name')}}">
             </a>
         </div>
         <div class="flex lg:hidden">
@@ -20,11 +20,12 @@
         <div class="hidden lg:flex lg:gap-x-12">
             <a href="/" class="text-sm font-semibold leading-6 text-white">Home</a>
             <a href="{{ route('about') }}" class="text-sm font-semibold leading-6 text-white" wire:navigate>About us</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">Gallery</a>
+            <a href="{{ route('about') }}/#programs" class="text-sm font-semibold leading-6 text-white">Programs</a>
             <a href="{{ route('contact.index')}}" class="text-sm font-semibold leading-6 text-white">Contact us</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="{{ route('register-player.index')}}" class="text-sm font-semibold leading-6 text-white">Registration is
+            <a href="{{ route('register-player.index')}}"
+                class="text-sm font-semibold leading-6 text-white">Registration is
                 Open <span aria-hidden="true">&rarr;</span></a>
         </div>
     </div>
@@ -35,10 +36,9 @@
         <div
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div class="flex items-center justify-between">
-                <a href="#" class="-m-1.5 p-1.5">
+                <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">{{ config('app.name')}}</span>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="">
+                    <img class="h-8 w-auto" src="{{ asset('assets/logo.png')}}" alt="{{ config('app.name')}}">
                 </a>
                 <button @click="open = ! open" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
                     <span class="sr-only">Close menu</span>
@@ -52,21 +52,22 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/25">
                     <div class="space-y-2 py-6">
-                        <a href="#"
+                        <a href="/"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Home</a>
-                        <a href="#"
+                        <a href="{{ route('about') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">About
                             us</a>
-                        <a href="#"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Gallery</a>
-                        <a href="#"
+                        <a href="{{ route('about') }}/#programs"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Programs</a>
+                        <a href="{{ route('contact.index')}}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Contect
                             us</a>
                     </div>
                     <div class="py-6">
-                        <a href="#"
+                        <a href="{{ route('register-player.index')}}"
                             class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">Register
-                            open
+                            a
+                            player
                         </a>
                     </div>
                 </div>

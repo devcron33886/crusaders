@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body class="antialiased">
-    @include('layouts.menu')
+<x-front-layout>
     <div class="relative isolate bg-gray-900 mt-24">
         <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
             <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
@@ -127,7 +110,4 @@
         </div>
     </div>
     <x-footer-component />
-
-</body>
-
-</html>
+</x-front-layout>

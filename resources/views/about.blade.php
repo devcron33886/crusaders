@@ -151,7 +151,7 @@
         </div>
 
         <!-- Values section -->
-        <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+        <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8" id="programs">
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Programs</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-100">Our program is composed of two major categories which
