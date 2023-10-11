@@ -17,7 +17,7 @@
     <meta property="og:description" content="{{ $description }}" />
     <meta property="og:site_name" content="{{ config('app.name', 'Laravel') }}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@JabaleeSports" />>
+    <meta name="twitter:site" content="@JabaleeSports" />
     <meta name="twitter:title" content="{{ $title }}" />
     <meta name="twitter:description" content="{{ $description }}" />
     <link rel="manifest" href="/manifest.json">
@@ -25,7 +25,6 @@
     <link rel="icon" href="/images/icons/icon-192x192.png">
     <link rel="shortcut icon" href="/images/icons/icon-192x192.png">
     <link rel="canonical" href="{{ url()->current() }}" />
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,7 +37,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased">
+<body class="antialiased bg-gray-900">
     @include('layouts.menu')
 
     <main class="isolate">
@@ -316,4 +315,6 @@
 
     </main>
     <x-footer-component />
-    </x-front-layout>
+</body>
+
+</html>
