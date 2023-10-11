@@ -1,6 +1,37 @@
 <x-front-layout>
     <div class="relative isolate bg-gray-900 mt-24">
+        <div class="mt-24 max-w-7xl mx-auto sm:px-6 lg:px-8">
+            @if (session()->has('success'))
+            <div class="border-l-4 border-green-400 bg-green-700 p-4 shadow-sm rounded-md">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 text-green-400">
+                            <path fill-rule="evenodd"
+                                d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm text-white">
+                            Success
+                        <p class="font-medium text-white">{{ session('success') }}</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            @endif
+            @if (session()->has('error'))
+            <x-alert type="error" class="mt-4 bg-red-700">
+                <strong class="font-bold">Alert!</strong>
+                <span class="block sm:inline">{{ session('error') }}</span>
+            </x-alert>
+            @endif
+        </div>
         <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+
             <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                 <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                     <div class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
@@ -38,7 +69,7 @@
                                         d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                                 </svg>
                             </dt>
-                            <dd>545 Mavis Island<br>Chicago, IL 99191</dd>
+                            <dd>Kigali Rwanda<br>Bright Angels School, Nyarutarama</dd>
                         </div>
                         <div class="flex gap-x-4">
                             <dt class="flex-none">
@@ -49,7 +80,7 @@
                                         d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                 </svg>
                             </dt>
-                            <dd><a class="hover:text-white" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a></dd>
+                            <dd><a class="hover:text-white" href="tel:+250 791 275 980">+250 791 275 980</a></dd>
                         </div>
                         <div class="flex gap-x-4">
                             <dt class="flex-none">
@@ -60,35 +91,54 @@
                                         d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                 </svg>
                             </dt>
-                            <dd><a class="hover:text-white" href="mailto:hello@example.com">hello@example.com</a></dd>
+                            <dd><a class="hover:text-white"
+                                    href="mailto:info@crusaders.africa">info@crusaders.africa</a></dd>
                         </div>
                     </dl>
                 </div>
             </div>
-            <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+
+            <form action="{{ route('contact.store')}}" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                @csrf
                 <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                     <div class="sm:col-span-2">
                         <div>
+
                             <label for="name" class="block text-sm font-semibold leading-6 text-white">Name</label>
                             <div class="mt-2.5">
-                                <input type="text" name="name" id="name" autocomplete="given-name"
-                                    class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+
+                                <x-text-input id="name" class="block mt-1 w-full" type="text" name="name"
+                                    :value="old('name')" autofocus autocomplete="name" />
+                                <x-input-error :messages="$errors->get('name')" class="mt-2" />
+                            </div>
+                        </div>
+                        <div>
+
+                            <label for="subject"
+                                class="block text-sm font-semibold leading-6 text-white">Subject</label>
+                            <div class="mt-2.5">
+
+                                <x-text-input id="subject" class="block mt-1 w-full" type="text" name="subject"
+                                    :value="old('subject')" />
+                                <x-input-error :messages="$errors->get('subject')" class="mt-2" />
                             </div>
                         </div>
 
                         <div class="mt-4 sm:col-span-2">
                             <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
                             <div class="mt-2.5">
-                                <input type="email" name="email" id="email" autocomplete="email"
-                                    class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                <x-text-input id="email" class="block mt-1 w-full" type="email" name="email"
+                                    :value="old('email')" autocomplete="username" />
+                                <x-input-error :messages="$errors->get('email')" class="mt-2" />
                             </div>
                         </div>
                         <div class="mt-4 sm:col-span-2">
                             <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Phone
                                 number</label>
                             <div class="mt-2.5">
-                                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
-                                    class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                <x-text-input id="phone" class="block mt-1 w-full" type="tel" name="phone"
+                                    :value="old('phone')" />
+                                <x-input-error :messages="$errors->get('phone')" class="mt-2" />
                             </div>
                         </div>
                         <div class="mt-4 sm:col-span-2">
@@ -96,7 +146,11 @@
                                 class="block text-sm font-semibold leading-6 text-white">Message</label>
                             <div class="mt-2.5">
                                 <textarea name="message" id="message" rows="4"
-                                    class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"></textarea>
+                                    class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                {{ old('message') }}
+                                </textarea>
+                                <x-input-error :messages="$errors->get('message')" class="mt-2" />
+
                             </div>
                         </div>
                     </div>

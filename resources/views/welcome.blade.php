@@ -2,15 +2,23 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <title>{{ $title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="vite:mode" content="development">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="A Tailwind CSS starter template for Laravel">
-    <meta name="keywords" content="tailwindcss,laravel,vite">
+    <meta name="description" content="{{ $description }}">
+    <meta name="keywords" content="{{ $keywords }}">
     <meta name="author" content="Jacques MBABAZI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://crusaders.africa">
 
-    <title>Home</title>
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@JabaleeSports">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -166,30 +174,24 @@
             <ul role="list"
                 class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
                 <li class="rounded-2xl bg-gray-800 px-8 py-10">
-                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
-                        src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                        alt="">
-                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">Leonard Krasner</h3>
+                    <img class="mx-auto h-auto w-48 rounded-full md:h-56 md:w-56"
+                        src="{{ asset('assets/coach-chris.jpg')}}" alt="">
+                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight uppercase text-white">Christopher
+                        Kyebambe
+                    </h3>
                     <p class="text-sm leading-6 text-gray-100">Head Coach</p>
 
                 </li>
 
                 <li class="rounded-2xl bg-gray-800 px-8 py-10">
-                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
-                        src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src="{{ asset('assets/brian.jpeg')}}"
                         alt="">
-                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">Leonard Krasner</h3>
-                    <p class="text-sm leading-6 text-gray-100">Head Coach</p>
+                    <h3 class="mt-6 text-base font-semibold leading-7 uppercase tracking-tight text-white">Brian Kirungi
+                    </h3>
+                    <p class="text-sm leading-6 text-gray-100">Legal Advisor</p>
 
                 </li>
-                <li class="rounded-2xl bg-gray-800 px-8 py-10">
-                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
-                        src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                        alt="">
-                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">Leonard Krasner</h3>
-                    <p class="text-sm leading-6 text-gray-100">Head Coach</p>
 
-                </li>
 
                 <!-- More people... -->
             </ul>

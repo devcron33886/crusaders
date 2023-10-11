@@ -209,56 +209,60 @@
                         contesting shots among others.</dd>
                 </div>
             </dl>
-            <h4 class="text-xl mt-12 font-bold tracking-tight text-white sm:text-4xl">Elite program</h4>
+            <div class="mx-auto max-w-7xl lg:mx-0 mt-12">
+                <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Elite Program</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-100">At Crusaders Basketball Academy we do run special
+                    sessions of about 1 hour to 2 hours for preparation of our elite players category to enable them get
+                    to the elite level of playing the game.
+
+                    This program helps to speed up the development and growth drastically from one session to another.
+                    Within 3 to 4 months the player will have refined and mastered certain skill sets that will make him
+                    exceptional and stand out.
+
+                    The process is usually as follows(IRM)
+
+                    Introduce skills
+                    Refine skills
+                    Master skills
+                    The athletes or our trainees are taken vigorously through these intense sessions.
+                </p>
+            </div>
+
             <dl
                 class="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div>
-                    <dt class="font-semibold text-white">1. PASSING</dt>
-                    <dd class="mt-1 text-white">Passing fundamentals, Bounce pass,
-                        Chest pass, Over head pass, spear
-                        pass how to execute pass
-                        fundamentally, stance, form, feet,
-                        finger tips, all key pointers.
+                    <dt class="font-semibold text-white uppercase">1. Ball handling drills
+                    </dt>
+                    <dd class="mt-1 text-white">Machine gun dribble,single and double cross, dribbling stance, single
+                        and double crossover.
+
+                        Behind the back dribble, between the legs dribble and blind fold dribble.
+                        Attack and retreat dribble,hesitation dribble, in and out dribble.
+
                     </dd>
                 </div>
                 <div>
-                    <dt class="font-semibold text-white">2. DRIBBLING</dt>
-                    <dd class="mt-1 text-gray-100">Fundamentals on dribbling and ball
-                        handling, emphasis on how we
-                        dribble, ball protection, looking up,
-                        types of dribbling styles, between the
-                        legs, behind the back, drop step with
-                        the how, why and when for the
-                        athletes to fully understand &
-                        execute.</dd>
+                    <dt class="font-semibold text-white uppercase">2. Passing drills
+                    </dt>
+                    <dd class="mt-1 text-gray-100">Wall to wall passing,two man break(dribble and pass,layup)
+                        Three man weave passing(lay up and shooting)
+                        .</dd>
                 </div>
                 <div>
-                    <dt class="font-semibold text-gray-100">3. SHOOTING </dt>
-                    <dd class="mt-1 text-gray-100">Fundamentals in Shooting such as
-                        Follow through, Fingers, Release,
-                        Elbow and stance plus shooting form.
-                        We ensure the athletes learn and
-                        execute their shooting fundamentally
-                        with great coaches available.
-                        Different types of shots are taught
-                        such as Jump shot, lay up shot, step
-                        back shot, fade away shot, tear drop,
-                        floater among others.</dd>
+                    <dt class="font-semibold text-gray-100 uppercase">3. Conditioning drills </dt>
+                    <dd class="mt-1 text-gray-100">Short sprints(variation with cones),full court run,strength
+                        drills(push up,sit up and others,box out),maican drills (left and right under
+                        basket),ladder(different movements work on footwork and agility and fundamental defensive
+                        slides).</dd>
                 </div>
                 <div>
-                    <dt class="font-semibold text-gray-100">4. DEFENSE </dt>
-                    <dd class="mt-1 text-gray-100">Fundamentals on how we defend in
-                        basketball ; use our feet, slides, arm
-                        bar, see man and see ball, pistols,
-                        communication in Team defense,
-                        defending screens, box outs,
-                        rebounding, blocking shots,
-                        positioning , defensive rotation,
-                        recover on defense, transitioning
-                        from offense to defense, turn your
-                        back, back peddling, tracing the ball,
-                        pressing the ball, pressure on ball,
-                        contesting shots among others.</dd>
+                    <dt class="font-semibold text-gray-100">4. Offensive drills </dt>
+                    <dd class="mt-1 text-gray-100">Master the triple threat attack(options), pivoting(180 to 360 degrees
+                        variations),read and react offense(options). Pick N roll(offense and options,single and double
+                        screen, pick N pop, dummy screen and back door screen).
+                        Drive and click, dribble handoff, hand over offense,extra pass,give and go, pass and cut and
+                        various offensive options.
+                    </dd>
                 </div>
             </dl>
         </div>

@@ -29,9 +29,14 @@ class ContactController extends Controller
 
     public function store(StoreContactRequest $request)
     {
-        $contact = Contact::create($request->validated());
+        try {
+            $contact = Contact::create($request->validated());
+        } catch (\Exception $e) {
+            return back()->with('error', 'Something went wrong, please try again later.');
+        }
 
-        return redirect('contact')
-            ->with('message', 'Thanks for your message. We\'ll be in touch.');
+       return redirect('contact')
+          ->with('success', 'Thanks for your message. We\'ll be in touch.');
+
     }
 }
