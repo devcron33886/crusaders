@@ -1,5 +1,46 @@
-<x-front-layout>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <title>{{ $title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="{{ $description}}" />
+    <meta name="keywords" content="{{ $keywords }}" />
+    <meta name="author" content="Jacques MBABAZI" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="{{ $title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:description" content="{{ $description }}" />
+    <meta property="og:site_name" content="{{ config('app.name', 'Laravel') }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@JabaleeSports" />>
+    <meta name="twitter:title" content="{{ $title }}" />
+    <meta name="twitter:description" content="{{ $description }}" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png">
+    <link rel="icon" href="/images/icons/icon-192x192.png">
+    <link rel="shortcut icon" href="/images/icons/icon-192x192.png">
+    <link rel="canonical" href="{{ url()->current() }}" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body class="antialiased">
     @include('layouts.menu')
+
     <main class="isolate">
         <!-- Hero section -->
         <div class="relative isolate -z-10">
@@ -275,4 +316,4 @@
 
     </main>
     <x-footer-component />
-</x-front-layout>
+    </x-front-layout>

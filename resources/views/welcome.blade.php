@@ -5,20 +5,28 @@
     <title>{{ $title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="vite:mode" content="development">
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Laravel Vite Starter" />
+    <meta name="keywords" content="laravel, vite, starter" />
+    <meta name="author" content="Laravel Vite Starter" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="{{ $description }}">
-    <meta name="keywords" content="{{ $keywords }}">
-    <meta name="author" content="Jacques MBABAZI">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://crusaders.africa">
-
-    <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@JabaleeSports">
-    <meta name="twitter:title" content="{{ $title }}">
-    <meta name="twitter:description" content="{{ $description }}">
-    <meta name="twitter:image" content="https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="{{ config('app.name', 'Laravel') }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="/images/icons/icon-192x192.png" />
+    <meta property="og:description" content="Laravel Vite Starter" />
+    <meta property="og:site_name" content="{{ config('app.name', 'Laravel') }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@laravelvite" />
+    <meta name="twitter:creator" content="@laravelvite" />
+    <meta name="twitter:title" content="{{ config('app.name', 'Laravel') }}" />
+    <meta name="twitter:description" content="Laravel Vite Starter" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png">
+    <link rel="icon" href="/images/icons/icon-192x192.png">
+    <link rel="shortcut icon" href="/images/icons/icon-192x192.png">
+    <link rel="canonical" href="{{ url()->current() }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
