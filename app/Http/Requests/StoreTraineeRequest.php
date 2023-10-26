@@ -14,21 +14,14 @@ class StoreTraineeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'category' => 'required',
+            'category' => 'required|string',
             'name' => 'required|string|max:255',
-            'father_name' => 'required|string|max:255',
-            'mother_name' => 'required|string|max:255',
-            'father_phone' => 'required|string|max:20',
-            'mother_phone' => 'required|string|max:20',
-            'father_email' => 'required|string|max:255',
-            'mother_email' => 'required|string|max:255',
+            'parent' => 'required|string|max:255',
+            'parent_phone' => 'required|string|max:16',
             'next_of_kin_name' => 'required|string|max:255',
-            'next_of_kin_phone' => 'required|string|max:20',
+            'next_of_kin_phone' => 'required|string|max:16',
             'next_of_kin_relationship' => 'required|string|max:255',
             'date_of_birth' => 'required|date',
-            'height' => 'required|integer',
-            'weight' => 'required|integer',
-            'school' => 'required|string|max:255',
             'health_insurance' => 'required|string|max:255',
             'medical_history' => 'required',
         ];

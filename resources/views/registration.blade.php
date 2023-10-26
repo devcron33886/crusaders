@@ -70,10 +70,13 @@
                                     <select id="category" name="category"
                                         class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-smblock mt-1 w-full"
                                         autofocus :value="old('category')">
-                                        <option selected="">Select program</option>
-                                        <option value="Fundamental program">Fundamental program</option>
-                                        <option value="Elite program">Elite program</option>
+                                        <option value disabled {{ old('category', null) === null ? 'selected' : '' }}>Select program</option>
+                                        @foreach(App\Models\Trainee::CATEGORY_SELECT as $key => $label)
+                                            <option value="{{ $key }}" {{ old('category', '') === (string) $key ? 'selected' : '' }}>{{ $label }}</option>
+                                        @endforeach
                                     </select>
+                                    
+                                    <x-input-error :messages="$errors->get('category')" class="mt-2" />
                                 </div>
                                 <!-- Name -->
                                 <div class="mt-4">
@@ -84,45 +87,18 @@
                                 </div>
                                 <!-- Father Name -->
                                 <div class="mt-4">
-                                    <x-input-label for="Fathername" :value="__('Father Names')" />
-                                    <x-text-input id="fathername" class="block mt-1 w-full" type="text"
-                                        name="father_name" :value="old('father_name')" />
-                                    <x-input-error :messages="$errors->get('father_name')" class="mt-2" />
+                                    <x-input-label for="parent" :value="__('Parent/Guardian')" />
+                                    <x-text-input id="parent" class="block mt-1 w-full" type="text"
+                                        name="parent" :value="old('parent')" />
+                                    <x-input-error :messages="$errors->get('parent')" class="mt-2" />
                                 </div>
-                                <!-- Mother Name -->
-                                <div class="mt-4">
-                                    <x-input-label for="mothername" :value="__('Mother Names')" />
-                                    <x-text-input id="mothername" class="block mt-1 w-full" type="text"
-                                        name="mother_name" :value="old('mother_name')" />
-                                    <x-input-error :messages="$errors->get('mother_name')" class="mt-2" />
-                                </div>
+
                                 <!-- Father Phone -->
                                 <div class="mt-4">
-                                    <x-input-label for="fatherphone" :value="__('Father Phone')" />
-                                    <x-text-input id="fatherphone" class="block mt-1 w-full" type="tel"
-                                        name="father_phone" :value="old('father_phone')" />
-                                    <x-input-error :messages="$errors->get('father_phone')" class="mt-2" />
-                                </div>
-                                <!-- Mother Phone -->
-                                <div class="mt-4">
-                                    <x-input-label for="motherphone" :value="__('Mother Phone')" />
-                                    <x-text-input id="motherphone" class="block mt-1 w-full" type="tel"
-                                        name="mother_phone" :value="old('mother_phone')" />
-                                    <x-input-error :messages="$errors->get('mother_phone')" class="mt-2" />
-                                </div>
-                                <!-- Father Email -->
-                                <div class="mt-4">
-                                    <x-input-label for="fatheremail" :value="__('Father Email')" />
-                                    <x-text-input id="fatheremail" class="block mt-1 w-full" type="email"
-                                        name="father_email" :value="old('father_email')" />
-                                    <x-input-error :messages="$errors->get('father_email')" class="mt-2" />
-                                </div>
-                                <!-- Mother Email -->
-                                <div class="mt-4">
-                                    <x-input-label for="motheremail" :value="__('Mother Email')" />
-                                    <x-text-input id="motheremail" class="block mt-1 w-full" type="email"
-                                        name="mother_email" :value="old('mother_email')" />
-                                    <x-input-error :messages="$errors->get('mother_email')" class="mt-2" />
+                                    <x-input-label for="phone" :value="__('Parent Phone Number')" />
+                                    <x-text-input id="parent_phone" class="block mt-1 w-full" type="tel"
+                                        name="parent_phone" :value="old('parent_phone')" />
+                                    <x-input-error :messages="$errors->get('parent_phone')" class="mt-2" />
                                 </div>
                                 <!-- Next of kin name -->
                                 <div class="mt-4">
@@ -152,27 +128,6 @@
                                         name="date_of_birth" :value="old('date_of_birth')" />
                                     <x-input-error :messages="$errors->get('date_of_birth')" class="mt-2" />
                                 </div>
-                                <!-- Height -->
-                                <div class="mt-4">
-                                    <x-input-label for="height" :value="__('Enter player Height in centimeters')" />
-                                    <x-text-input id="height" class="block mt-1 w-full" type="number" name="height"
-                                        :value="old('height')" />
-                                    <x-input-error :messages="$errors->get('height')" class="mt-2" />
-                                </div>
-                                <!-- Height -->
-                                <div class="mt-4">
-                                    <x-input-label for="weight" :value="__('Enter player Weight in Kilograms')" />
-                                    <x-text-input id="weight" class="block mt-1 w-full" type="number" name="weight"
-                                        :value="old('weight')" />
-                                    <x-input-error :messages="$errors->get('weight')" class="mt-2" />
-                                </div>
-                                <!-- School -->
-                                <div class="mt-4">
-                                    <x-input-label for="school" :value="__('Enter player School he/She attend')" />
-                                    <x-text-input id="school" class="block mt-1 w-full" type="text" name="school"
-                                        :value="old('school')" />
-                                    <x-input-error :messages="$errors->get('school')" class="mt-2" />
-                                </div>
                                 <!-- Health insurance -->
                                 <div class="mt-4">
                                     <x-input-label for="insurance"
@@ -184,13 +139,12 @@
                                 <!-- Medical history -->
                                 <div class="mt-4">
                                     <x-input-label for="medical" :value="__('Enter player health details here')" />
-                                    <x-text-input id="medical" class="block mt-1 w-full" type="text"
-                                        name="medical_history" :value="old('medical_history')" />
+                                    <textarea rows="4" name="medical_history" id="medical" class="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6"> {{ old('medical_history')}}</textarea>
+                                    
                                     <x-input-error :messages="$errors->get('medical_history')" class="mt-2" />
                                 </div>
                             </div>
                             <div class="mt-4">
-
                                 <x-primary-button type="submit">
                                     {{ __('Register a player') }}
                                 </x-primary-button>
@@ -201,4 +155,5 @@
             </div>
         </div>
     </main>
+    <x-footer-component />
 </x-front-layout>
