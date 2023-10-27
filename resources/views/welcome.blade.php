@@ -192,7 +192,7 @@
                     <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight uppercase text-white">Christopher
                         Kyebambe
                     </h3>
-                    <p class="text-sm leading-6 text-gray-100">Head Coach</p>
+                    <p class="text-sm leading-6 text-gray-100">Technical Director/Head Coach</p>
 
                 </li>
 
@@ -201,7 +201,7 @@
                         alt="">
                     <h3 class="mt-6 text-base font-semibold leading-7 uppercase tracking-tight text-white">Brian Kirungi
                     </h3>
-                    <p class="text-sm leading-6 text-gray-100">Legal Advisor</p>
+                    <p class="text-sm leading-6 text-gray-100">Chief Executive Officer(CEO)</p>
 
                 </li>
 
