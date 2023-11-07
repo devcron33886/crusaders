@@ -21,7 +21,7 @@ class StoreTraineeRequest extends FormRequest
             'next_of_kin_name' => 'required|string|max:255',
             'next_of_kin_phone' => 'required|string|max:16',
             'next_of_kin_relationship' => 'required|string|max:255',
-            'date_of_birth' => 'required|date',
+            'date_of_birth' => 'required|string',
             'health_insurance' => 'required|string|max:255',
             'medical_history' => 'required',
         ];

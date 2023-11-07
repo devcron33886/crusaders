@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('next_of_kin_name');
             $table->string('next_of_kin_phone');
             $table->string('next_of_kin_relationship');
-            $table->date('date_of_birth');
+            $table->string('date_of_birth');
             $table->integer('height')->nullable();
             $table->integer('weight')->nullable();
             $table->string('school')->nullable();

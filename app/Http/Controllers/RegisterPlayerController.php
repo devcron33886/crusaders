@@ -20,7 +20,7 @@ class RegisterPlayerController extends Controller
         } catch (\Exception $e) {
             return back()->with('error', 'Player registration failed');
         }
-
-        return to_route('register-player.index')->with('success', 'Player registered successfully');
+        session()->flash('success', $player->name.' is registered successfully');
+        return to_route('register-player.index');
     }
 }

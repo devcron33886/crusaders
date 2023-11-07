@@ -115,8 +115,8 @@
             <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
                 <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                     <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">We’re shapping careers
-                            in basket ball.</h1>
+                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">We are shaping careers
+                            in Basketball.</h1>
                         <p class="relative mt-6 text-lg leading-8 text-gray-900 sm:max-w-md lg:max-w-none">JABALEE
                             Sports Management has a vision to be the leading sports and Entertainment Company
                             while connecting Africa to the global sports market. Talent management is a major goal
@@ -181,8 +181,7 @@
             <div class="mx-auto max-w-2xl">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our team</h2>
                 <p class="mt-4 text-lg leading-8 text-gray-100">We’re a dynamic group of individuals who are passionate
-                    about shaping the careers of young people.
-                    about what we do.</p>
+                    about shaping the careers of young people.</p>
             </div>
             <ul role="list"
                 class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-8">
