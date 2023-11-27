@@ -160,6 +160,8 @@ return [
          * Package Service Providers...
          */
 
+         KingFlamez\Rave\RaveServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -184,6 +186,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Rave'=>\KingFlamez\Rave\Facades\Rave::class,
     ])->toArray(),
 
 ];
