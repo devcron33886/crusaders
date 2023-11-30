@@ -23,7 +23,7 @@ Route::get('/register-player', [RegisterPlayerController::class, 'index'])->name
 Route::post('/player', [RegisterPlayerController::class, 'register'])->name('trainee.register');
 Route::get('/pricing', function () {
     return view('pricing');
-});
+})->name('pricing');
 
 
 Route::get('/daily-checkout', [DailyPaymentController::class, 'index'])->name('daily-checkout');
